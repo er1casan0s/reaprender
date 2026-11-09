@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define a codificação para exibir corretamente acentos e caracteres em português. -->
+  <meta charset="UTF-8">
+  <!-- Faz o layout se adaptar a celulares, tablets e computadores. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18344f">
+  <meta name="description" content="REAPRENDER: uma plataforma acolhedora para retomar os estudos no seu ritmo.">
+  <title>REAPRENDER | Aprender é recomeçar</title>
+  <!-- Importa uma fonte legível e elegante. Se estiver sem internet, o sistema usa fontes locais. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Folha de estilos principal do projeto. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Biblioteca oficial do Supabase para autenticação e banco de dados. -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Arquivos JavaScript carregados em ordem: configuração, conteúdo e aplicação. -->
+  <script defer src="js/config.js"></script>
+  <script defer src="js/catalog.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <!-- O JavaScript coloca aqui todas as telas da aplicação. -->
+  <div id="app" class="app-shell">
+    <div class="loading-screen"><div class="brand-mark">R</div><p>Preparando seu espaço de aprendizagem...</p></div>
+  </div>
+  <!-- Região acessível para avisos rápidos, como erros e confirmações. -->
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
